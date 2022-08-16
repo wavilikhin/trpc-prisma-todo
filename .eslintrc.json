@@ -1,0 +1,23 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "max-len": [
+      "error",
+      {"code": 80, "tabWidth": 2, "ignoreComments": true, "ignoreUrls": true}
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": "always",
+        "ObjectPattern": {"multiline": true},
+        "ImportDeclaration": "never",
+        "ExportDeclaration": {"multiline": true, "minProperties": 3}
+      }
+    ]
+  }
+}
