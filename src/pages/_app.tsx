@@ -7,7 +7,9 @@ import { SessionProvider } from "next-auth/react";
 import "../styles/globals.css";
 
 const MyApp: AppType = ({
+  // eslint-disable-next-line react/prop-types
   Component,
+  // eslint-disable-next-line react/prop-types
   pageProps: { session, ...pageProps },
 }) => {
   return (
